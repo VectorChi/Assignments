@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Top Nav Links -->
+    <header class="top_nav">
+      <a href="./index.html">
+        <img class="logo" src="./Images/Logo.svg" alt="mylogo" />
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html/">About me</a></li>
+          <li><a href="./index.html">Projects</a></li>
+          <li><a href="./index.html">Services</a></li>
+        </ul>
+      </nav>
+      <a href="#footercard"><button class="navbutton">Contact me</button></a>
+    </header>
+    <main>
+        <section class="contact_hero">
+            <h4>
+                <span class="top">Want to chat?</span>
+                <span class="bottom">👂🏽I'm listening</span>
+            </h4>
+      <!-- Form Input -->
+      <form action="">
+         <label for="name">Your name</label>
+        <input id="name" class="name" type="text" placeholder="e.g Jon Bellion" />
+
+        <label for="email">Email Address</label>
+        <input id="email" class="email" type="email" placeholder="e.g jonbellion@email.com" />
+
+        <label for="message">Leave a message</label>
+        <textarea name="message" id="message" cols="30" rows="15"> Leave a message</textarea>
+        <a href=""><button>Send message</button></a>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

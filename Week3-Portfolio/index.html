@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Top Nav Links -->
+    <header class="top_nav">
+      <a href="./index.html">
+        <img class="logo" src="./Images/Logo.svg" alt="mylogo" />
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#myservice">Services</a></li>
+        </ul>
+      </nav>
+      <a href="#footercard"><button class="navbutton">Contact me</button></a>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <p id="hero">👋🏽 Hi there, I am Adimchi</p>
+        <h1><span class="creative">Creative</span>Frontend Developer</h1>
+        <p>Building functional solutions for soaring businesses and startups</p>
+        <a href="#footercard"><button class="hero_cta">Contact me</button></a>
+      </section>
+
+      <!-- About me section -->
+      <section class="about_me" id="aboutme">
+        <article class="profile">
+          <header>
+            <h5>About me</h5>
+          </header>
+          <p>
+            I am Adimchi Oka, a Frontend Engineer based in Lagos, Nigeria. I
+            have experience building with web technologies including HTML, CSS
+            and Javascript and ReactJS (in view).
+          </p>
+          <p>
+            Equally a blockchain enthuasiast, I have a keen interest in web3 and
+            cryptocurrencies. I enjoy swimming, travelling and meeting people.
+          </p>
+        </article>
+        <a href="#">
+          <img class="myimage" src="./Images/myimage.png" alt="myimage" />
+        </a>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects">
+        <header>
+          <h5 class="project_header">Projects</h5>
+        </header>
+
+        <!-- First Project -->
+        <div class="first_project">
+          <a href="https://codepen.io/vectorchi/pen/XWqqLor" target="_blank">
+            <img src="./Images/Tesla.png" alt="Elon Musk" class="elon" />
+          </a>
+          <div class="first_content">
+            <h4>Elon Musk's Tribute page</h4>
+            <p>
+              A static single web page paying tribute to one of the world’s
+              leading inventors and engineers
+            </p>
+            <a
+              href="https://codepen.io/vectorchi/pen/XWqqLor"
+              class="see_project"
+              target="_blank"
+            >
+              See project
+            </a>
+          </div>
+        </div>
+
+        <!-- Second Project -->
+        <div class="second_project">
+          <div class="second_content">
+            <h4>Login and Sign up form</h4>
+            <p>
+              Interlinked pages with registration and login forms with success
+              messages
+            </p>
+            <a href="#" class="see_project" target="_blank">See project</a>
+          </div>
+          <a href="#">
+            <img src="./Images/Form.png" alt="Signup" class="forms" />
+          </a>
+        </div>
+
+        <!-- Third Project -->
+        <div class="third_project">
+          <a href="https://vectorchi.github.io/portfolio/" target="_blank">
+            <img
+              src="./Images/Portfolio.png"
+              alt="heropage"
+              class="hero_page"
+            />
+          </a>
+          <div class="third_content">
+            <h4>My portfolio hero page</h4>
+            <p>
+              A hero section page with social media links that link to my
+              profile
+            </p>
+            <a href="https://vectorchi.github.io/portfolio/" class="see_project"
+              >See project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services" id="myservice">
+        <h4>
+          Offering a wide range of services from <span>product design</span> to
+          <span>web development</span> and <span>competitive analysis</span>
+        </h4>
+      </section>
+    </main>
+
+    <!-- Contact us/footer -->
+    <footer class="footer_card" id="footercard">
+      <div class="stay_in_touch">
+        <h3>Stay in touch</h3>
+        <a href="./contact.html"><button>Let's talk</button></a>
+      </div>
+      <div class="email_links">
+        <a href="mailto: adimchisylvester2@gmail.com" target="_blank"
+          ><p>adimchisylvester2@gmail.com</p>
+        </a>
+        <nav>
+          <a href="mailto: adimchisylvester2@gmail.com" target="_blank">
+            <i data-feather="mail"></i>
+          </a>
+
+          <a href="https://twitter.com/vector_chi" target="_blank">
+            <i data-feather="twitter"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/adimchioka/" target="_blank">
+            <i data-feather="linkedin"></i>
+          </a>
+
+          <a href="https://github.com/VectorChi" target="_blank">
+            <i data-feather="github"></i>
+          </a>
+          <a href="https://www.instagram.com/vectorchi/" target="_blank">
+            <i data-feather="instagram"></i>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

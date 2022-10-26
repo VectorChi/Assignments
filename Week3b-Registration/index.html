@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Set up a free account</h1>
+      <p>Fill in your details to get started at no charge or cost!</p>
+    </header>
+
+    <main>
+      <form action="./registered.html" name="signup" class="sign_up">
+        <div class="first_lastname">
+          <div class="first_name">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required />
+          </div>
+
+          <div class="last_name">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required />
+          </div>
+        </div>
+
+        <div class="email_password">
+          <div class="email">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="password">
+            <label for="password">Password (Atleast 8 characters)</label>
+            <input type="password" name="email" id="password" minlength="8" />
+          </div>
+        </div>
+
+        <div class="dob_number">
+          <div class="dob">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" max="2021-12-31" required />
+          </div>
+
+          <div class="number">
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone_number" required />
+          </div>
+        </div>
+
+        <div class="gender_color">
+          <div class="gender">
+            <p>Gender</p>
+            <div class="radio_options">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female" />
+            </div>
+          </div>
+          <div class="favcolor">
+            <label for="fav_color">Choose your favourite colour</label>
+            <input type="color" name="colour" id="fav_color" required />
+          </div>
+        </div>
+
+        <div class="signup_bottom">
+          <a href="./registered.html"
+            ><button type="submit">Create an account</button></a
+          >
+          <p class="subtext_signup">
+            Already have an account?
+            <a href="./login.html">Login</a>
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
