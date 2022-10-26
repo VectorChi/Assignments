@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sedan,
+.suvs,
+.luxury {
+  max-width: 300px;
+  max-height: 500px;
+  padding: 38px;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6em;
+  width: 210px;
+}
+h5 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+}
+.sedan button,
+.suvs button,
+.luxury button,
+.link {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 28px;
+  padding: 14px 24px;
+}
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 84px;
+}
+img {
+  width: 65px;
+  height: 40px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 95%, 0);
+  color: hsl(0, 0%, 95%);
+  outline: 1px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 571px) {
+  .sedan,
+  .suvs,
+  .luxury {
+    border-radius: 0px;
+    padding: 52px;
+  }
+  .content {
+    padding-bottom: 32px;
+  }
+  p {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sedan,
+  .suvs,
+  .luxury {
+    border-radius: 0px;
+    padding: 48px;
+  }
+  .content {
+    padding-bottom: 32px;
+  }
+  p {
+    width: 260px;
+  }
+}

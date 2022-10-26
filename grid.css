@@ -1,0 +1,53 @@
+.grid_container div {
+  padding: 10px;
+}
+
+.item1 {
+  grid-area: myred;
+  background-color: #eb4e21;
+}
+.item2 {
+  grid-area: myyellow;
+  background-color: #ffa501;
+}
+.item3 {
+  grid-area: mygreen;
+  background-color: #05a842;
+}
+
+.item4 {
+  grid-area: myblue;
+  background-color: #04acfd;
+}
+.item5 {
+  grid-area: myblue2;
+  background-color: #04acfd;
+}
+.grid_container {
+  display: grid;
+  grid-template-areas:
+    "myred myred myred myyellow myyellow"
+    "myred myred myred myyellow myyellow"
+    /* "myred myred myred myyellow" */
+    "mygreen mygreen myblue myblue myblue"
+    "mygreen mygreen myblue2 myblue2 myblue2";
+  gap: 14px;
+  padding: 32px;
+  background-color: #1a1d29;
+  width: 600px;
+  height: 500px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 28px;
+  padding: 14px 24px;
+}
